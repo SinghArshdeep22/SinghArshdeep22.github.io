@@ -1,0 +1,105 @@
+:root {
+    --primaryColor: #000000;
+    --secondaryColor: #FFFFFF;
+    ;
+
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Signika';
+    margin: 0;
+    padding: 0;
+    background-color: var(--primaryColor);
+    position: relative;
+}
+
+nav {
+    color: var(--secondaryColor);
+    padding: 10px 0;
+
+}
+
+.nav-container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-container a {
+    color: var(--secondaryColor);
+    text-decoration: none;
+    padding: 14px;
+    margin: 20px;
+    margin-bottom: 0;
+
+    border-radius: 15px 50px 30px;
+    border: 2px solid var(--secondaryColor);
+    box-shadow: 10px 10px;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    align-content: center;
+
+}
+
+.nav-container a:hover {
+    background-color: var(--secondaryColor);
+        color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
+
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50em;
+    margin: 3em auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px 50px;
+    border: 10px solid var(--secondaryColor);
+}
+
+.image-container h1 {
+    position: absolute;
+    text-align: center;
+    color: var(--secondaryColor);
+    font-size: 10em;
+    margin: 0;
+    pointer-events: none; 
+}
+
+.image-container p {
+    position: absolute;
+    color: var(--secondaryColor);
+    font-size: 18px;
+    margin-top: 15em;
+    pointer-events: none;
+    border-radius: 50px;
+    border: 5px solid var(--secondaryColor);
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 50%;
+    padding: 1em; 
+    text-align: center;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: var(--secondaryColor);
+    border-radius: 5px;
+    margin: 2em auto;
+    width: 80%; 
+}
