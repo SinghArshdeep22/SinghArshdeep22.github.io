@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 
-    <!--Fonts-->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="imgs/favicon.svg" type="image/svg+xml">   
 </head>
+
 <body>
     <nav>
         <div class="nav-container">
-            <a href="./index.html">Home</a>
-            <a href="./work.html">Work</a>
-            <a href="./contact.html">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#work">Work</a>
+            <a href="#about">About Me</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
     <hr>
-    <div class="image-container">
-        <img src="imgs/home.jpg" alt="">
-        <h1>Hello;</h1>
-        <p>Singh Arshdeep</p>
+    <div class="image-container" id="home">
+        <img src="imgs/home.jpg" alt="Home Image">
+        <h1>Singh Arshdeep</h1>
+        <button id="github"><a href="https://github.com">GitHub</a></button>
     </div>
     <hr>
+    <!-- Sezioni di destinazione -->
+    <div id="work">
+        <h2>Work</h2>
+        <p>Descrizione del lavoro...</p>
+    </div>
+    <hr>
+    <div id="about">
+        <h2>About Me</h2>
+        <p>Descrizione personale...</p>
+    </div>
+    <hr>
+    <div id="contact">
+        <h2>Contact</h2>
+        <p>Informazioni di contatto...</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
