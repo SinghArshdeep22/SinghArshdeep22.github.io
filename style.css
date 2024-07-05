@@ -115,3 +115,7 @@ hr {
     color: var(--secondaryColor);
     text-align: center;
 }
+
+#my-favicon path {
+    fill: rgb(255, 0, 0);
+}
