@@ -1,66 +1,38 @@
 #about {
-    padding: 2em;
-    color: var(--WHITE);
-    text-align: center;
+    padding: 0 2em 2em 2em;
     background-color: var(--LIGHT_GREEN);
-    margin: 3.5em auto 0em auto;
-    border-radius: 15px;
+    text-align: center;
+    margin-top: 2.2em;
 }
 
 .about-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.about-text {
-    max-width: 600px;
-    text-align: center;
-    margin-bottom: 2em;
+.about-text-frame {
+    background-color: var(--LIGHT_GREEN);
+    padding: 1em 3em;
+    border-radius: 15px;
+    color: var(--WHITE);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 10px solid var(--WHITE);
+    border-radius: 15px 50px;
 }
 
-.about-text p {
-    text-align: justify;
-    margin-top: 0.5em;
-}
-
-.about-text-intro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.about-text-frame h2 {
+    font-size: 2em;
+    color: var(--WHITE);
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    color: var(--ACCENT_COLOR);
 }
 
 .about-text-frame p {
-    border: 10px solid var(--DARK_GREEN);
-    border-radius: 15px;
-    padding: 2em;
-    width: 80%;
-    max-width: 60em;    
-    background-color: var(--DARK_GREEN);
-    color: var(--WHITE);
-}
-
-.about-text h2 {
-    margin-top: 1em;
-    color: var(--WHITE);
-}
-
-.about-text ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.about-text ul li {
-    background-color: var(WHITE);
-    color: var(--BLACK);
-    margin: 5px 0;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-#text-experience {
-    text-align: center;
-    margin: 5px 0;
-    padding: 5px;
+    text-align: justify;
+    margin: 1em 0;
+    line-height: 1.6;
 }

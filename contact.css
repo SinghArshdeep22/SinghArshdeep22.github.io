@@ -1,75 +1,115 @@
+:root {
+    --ACCENT_COLOR: #ffcc00;
+    --LIGHT_GRAY: #f2f2f2;
+}
+
 #contact {
-    padding: 2em;
+    padding: 1em;
     color: var(--WHITE);
-    text-align: center;
     background-color: var(--LIGHT_GREEN);
-    margin: 2em auto;
+    margin: 3em auto;
     border-radius: 15px;
+    max-width: 800px;
+    border: 10px solid var(--WHITE);
+    border-radius: 15px 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+    color: var(--WHITE);
 }
 
 .contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2em;
+    gap: 1em;
 }
 
 .contact-form {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.5em;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
 }
 
 .form-group label {
     margin-bottom: 0.5em;
     font-weight: bold;
+    color: var(--WHITE);
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 0.5em;
-    border: 2px solid var(--BLACK);
-    border-radius: 5px;
-    background-color: var(--BLACK);
-    color: var(--WHITE);
+    padding: 0.75em;
+    border: 2px solid var(--DARK_GREEN);
+    border-radius: 10px;
+    background-color: var(--WHITE);
+    color: var(--BLACK);
+    font-size: 1em;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--ACCENT_COLOR);
+    box-shadow: 0 0 5px var(--ACCENT_COLOR);
 }
 
 .submit-button {
     padding: 1em;
-    border: 2px solid var(--WHITE);
-    border-radius: 5px;
-    background-color: var(--WHITE);
+    border: none;
+    border-radius: 10px;
+    background-color: var(--ACCENT_COLOR);
+    box-shadow: 10px 10px;
     color: var(--BLACK);
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
 }
 
 .submit-button:hover {
-    background-color: var(--BLACK);
-    color: var(--WHITE);
-    border: 2px solid var(--BLACK);
+    color: var(--LIGHT_GRAY);
+    background-color: var(--DARK_GREEN);
+    transform: scale(1.05);
 }
 
 .contact-info {
     text-align: center;
+    font-size: 1.1em;
+    color: var(--WHITE);
 }
 
 .contact-info p {
-    margin: 0.5em 0;
+    margin: 0;
 }
 
 #confirmation-message {
     display: none;
     color: var(--DARK_GREEN);
     margin-top: 10px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    #contact {
+        padding: 2em 1em;
+        margin: 2em 1em;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
 }

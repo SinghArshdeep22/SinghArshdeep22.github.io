@@ -30,7 +30,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-/* NavBar */
+/* NAVBAR */
 
 nav {
     position: absolute;
@@ -80,6 +80,7 @@ nav {
     background-color: var(--LIGHT_GREEN);
     border: 2px solid var(--WHITE);
     transform: translateY(6px);
+    cursor: none;
 }
 
 /* HOME */
@@ -156,18 +157,20 @@ hr {
     text-align: center;
 }
 
-#my-favicon path {
-    fill: rgb(255, 0, 0);
-}
-
-.mouse-scroll {
+.arrow img {
     position: relative;
     width: 4%;
     height: auto;
     left: 50%; 
     transform: translateX(-50%); 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    cursor: none;
 }
 
+.arrow img:hover {
+    transform: scale(1.1) translateX(-45%);
+}
 
 /* INTRODUCTION */
 
