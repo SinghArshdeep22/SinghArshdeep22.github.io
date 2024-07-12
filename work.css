@@ -46,7 +46,6 @@
 .work-item img {
     width: 100px;
     height: 100px;
-    object-fit: cover;
     border-radius: 50%;
     margin-bottom: 1em;
 }
@@ -65,8 +64,8 @@
     color: var(--WHITE);
     font-size: 1em;
     text-align: justify;
-    text-justify: inter-word; 
-    text-align-last: center;    
+    text-justify: inter-word;
+    text-align-last: center;
 }
 
 .work-item img {
@@ -74,12 +73,12 @@
     height: 50px;
     object-fit: contain;
     border-radius: 50%;
-}   
+}
 
 #skill-description {
     text-align: justify;
-    text-justify: inter-word; 
-    text-align-last: center; 
+    text-justify: inter-word;
+    text-align-last: center;
 }
 
 /* TOOLS */
@@ -125,8 +124,8 @@
 
 .skill-text {
     max-width: 600px;
-    text-align: center; 
-    margin: 0 auto; 
+    text-align: center;
+    margin: 0 auto;
     margin-bottom: 2em;
 }
 
@@ -185,4 +184,53 @@
 .certification-link:hover {
     transform: scale(1.05);
     background-color: var(--DARK_GREEN);
+}
+
+@media (width: 360px) and (height: 740px) {
+
+    /* WORK */
+    .work-description {
+        margin-bottom: 1em;
+        font-size: 0.8em;
+    }
+
+    .work-item {
+        padding: 1em;
+    }
+
+    .work-item img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        margin-bottom: 1em;
+    }
+
+    .work-item p {
+        font-size: 0.8em;
+    }
+
+    /* TOOLS */
+    .tool-container {
+        gap: 5px;
+    }
+
+    .tool-item p {
+        font-size: 12px;
+    }
+
+    /* SKILLS */
+    #skill-description {
+        font-size: 0.8em;
+        margin: 0 10px;
+    }
+
+    #info-description {
+        font-size: 0.8em;
+        margin: 0 10px;
+    }
+
+    /* CERTIFICATION */
+    .certification-link {
+        padding: 5px 10px;
+    }
 }

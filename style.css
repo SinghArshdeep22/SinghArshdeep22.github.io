@@ -1,5 +1,3 @@
-/* BODY */
-
 :root {
     --BLACK: #000000;
     --WHITE: #FFFFFF;
@@ -161,8 +159,8 @@ hr {
     position: relative;
     width: 4%;
     height: auto;
-    left: 50%; 
-    transform: translateX(-50%); 
+    left: 50%;
+    transform: translateX(-50%);
     cursor: pointer;
     transition: transform 0.3s ease;
     cursor: none;
@@ -172,14 +170,14 @@ hr {
     transform: scale(1.1) translateX(-45%);
 }
 
-/* INTRODUCTION */
+/* HOME */
 
 .home-introduction {
     margin: 3em auto;
     display: flex;
     position: relative;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     border: 10px solid var(--WHITE);
     border-radius: 50px 15px;
     padding: 3em 10em 3em 10em;
@@ -191,10 +189,10 @@ hr {
 
 .home-introduction h2 {
     margin-right: auto;
-    padding: 0;     
+    padding: 0;
 }
 
-.home-vertical-line {   
+.home-vertical-line {
     border: 2px solid var(--WHITE);
     height: 8em;
     width: 1px;
@@ -206,18 +204,24 @@ hr {
 
 .home-introduction p {
     margin-left: 5em;
-    padding: 0; 
-    
+    padding: 0;
+
 }
 
 /* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: var(--LIGHT_GREEN);
+    padding: 0;
+}
 
 .footer hr {
     border: none;
     height: 3px;
     background-color: var(--WHITE);
     border-radius: 5px;
-    margin: 0em auto;
+    margin: 0 auto 10px;
     width: 80%;
 }
 
@@ -258,4 +262,134 @@ hr {
     background-color: var(--WHITE);
     margin: 5px 0;
     transition: 0.4s;
+}
+
+
+@media (width: 360px) and (height: 740px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+        padding-top: 35px;
+    }
+
+    /* NAVBAR */
+    .nav-container {
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .nav-container.show {
+        max-height: 300px;
+    }
+
+    .nav-container a {
+        width: 150px;
+        height: 40px;
+        padding: 3px 20px;
+        margin: 0.7em;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 1em;
+        right: 20px;
+        margin-right: 0;
+    }
+
+    /* IMAGE */
+
+    hr {
+        margin: 20px 15px;
+        margin-top: 30px;
+        width: 95%;
+    }
+
+    .image-container {
+        width: 21.5em;
+        margin: 10px auto 0.5em;
+
+    }
+
+    .image-container img {
+        border: 5px solid var(--WHITE);
+    }
+
+    .image-container h1 {
+        font-size: 3.5em;
+    }
+
+    .button {
+        width: 63%;
+        font-size: 12px;
+        margin-top: 8.5em;
+        padding: 0.5em;
+        border: 2.5px solid var(--WHITE);
+    }
+
+    .arrow img {
+        width: 10%;
+        margin: 10px auto;
+    }
+
+    /* HOME */
+    .home-introduction {
+        margin: 0.5em 0.3em 1em;
+        padding: 1em 2em;
+        width: 17.8em;
+        border: 5px solid var(--WHITE);
+    }
+
+    .home-introduction h2 {
+        font-size: 0.8em;
+    }
+
+    .home-vertical-line {
+        border: 1px solid var(--WHITE);
+        height: 6em;
+        width: 1px;
+        margin-top: 0.6em;
+        margin-left: 1em;
+        padding: 0;
+    }
+
+    .home-introduction p {
+        margin-left: 2em;
+        font-size: 0.5em;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        padding: 0;
+        margin-top: auto;
+        
+    }
+
+    .footer hr {
+        margin: 10px 15px;
+        width: 95%;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .social-links a {
+        margin: 0.1em 0.5em;
+        padding: 0;
+    }
+
+    .social-links img {
+        margin: 0 auto;
+    }
+
 }

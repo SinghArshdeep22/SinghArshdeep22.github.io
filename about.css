@@ -36,3 +36,24 @@
     margin: 1em 0;
     line-height: 1.6;
 }
+
+@media (width: 360px) and (height: 740px) {
+    #about {
+        padding: 0 2em 1em 2em;
+    }
+    .about-text-frame {
+        padding: 1em;
+        border: 5px solid var(--WHITE);
+    }
+    .about-text-frame h2 {
+        font-size: 1.5em;
+    }
+    .about-text-frame p {
+        text-align: justify;
+        margin: 0.5em 0;
+        line-height: 1.4;
+        font-size: 0.8em;
+        margin-bottom: 2em;
+    }
+
+}
