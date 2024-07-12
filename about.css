@@ -37,17 +37,22 @@
     line-height: 1.6;
 }
 
-@media (max-width: 450px) and (max-height: 932px) {
+/* RESPONSIVENESS */
+
+@media (max-width: 520px) and (max-height: 932px) {
     #about {
         padding: 0 2em 1em 2em;
     }
+
     .about-text-frame {
         padding: 1em;
         border: 5px solid var(--WHITE);
     }
+
     .about-text-frame h2 {
         font-size: 1.5em;
     }
+
     .about-text-frame p {
         text-align: justify;
         margin: 0.5em 0;

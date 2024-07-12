@@ -103,6 +103,8 @@
     font-size: 1.2em;
 }
 
+/* RESPONSIVENESS */
+
 @media (max-width: 768px) {
     #contact {
         padding: 2em 1em;
@@ -114,31 +116,33 @@
     }
 }
 
-@media (max-width: 450px) and (max-height: 932px) {
+@media (max-width: 520px) and (max-height: 932px) {
     #contact {
         padding: 1em 4em;
         margin: 0.5em 2em 0.5em 2em;
         border: 5px solid var(--WHITE);
     }
+
     #contact h2 {
         font-size: 1.5em;
         margin-bottom: 0.5em;
     }
+
     .submit-button {
         margin-top: 1.5em;
         padding: 1em;
         font-size: 1em;
     }
+
     .contact-info {
         margin-top: 1em;
         font-size: 0.8em;
     }
+
     #confirmation-message {
         display: none;
         color: var(--DARK_GREEN);
         margin-top: 10px;
         font-size: 1em;
     }
-    
-    
 }
