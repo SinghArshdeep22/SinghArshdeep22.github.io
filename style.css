@@ -350,6 +350,8 @@ footer {
 
     .image-container img {
         border: 5px solid var(--WHITE);
+        height: 20em;
+        width: 30em;
     }
 
     .image-container h1 {
