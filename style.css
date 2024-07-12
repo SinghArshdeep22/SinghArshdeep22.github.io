@@ -264,8 +264,17 @@ footer {
     transition: 0.4s;
 }
 
+@media (max-width: 1200px) {
+    .image-container {
+        width: 80%;
+    }
 
-@media (width: 360px) and (height: 740px) {
+    .image-container h1 {
+        font-size: 5em;
+    }
+}
+
+@media (max-width: 450px) and (max-height: 932px) {
     body {
         display: flex;
         flex-direction: column;
@@ -340,7 +349,6 @@ footer {
 
     /* HOME */
     .home-introduction {
-        margin: 0.5em 0.3em 1em;
         padding: 1em 2em;
         width: 17.8em;
         border: 5px solid var(--WHITE);
@@ -369,7 +377,6 @@ footer {
     .footer {
         padding: 0;
         margin-top: auto;
-        
     }
 
     .footer hr {
@@ -380,7 +387,8 @@ footer {
     .social-links {
         display: flex;
         justify-content: center;
-        align-items: center
+        align-items: center;
+        gap: 1.5em;
     }
 
     .social-links a {
@@ -391,5 +399,4 @@ footer {
     .social-links img {
         margin: 0 auto;
     }
-
 }

@@ -186,7 +186,7 @@
     background-color: var(--DARK_GREEN);
 }
 
-@media (width: 360px) and (height: 740px) {
+@media (max-width: 450px) and (max-height: 932px) {
 
     /* WORK */
     .work-description {

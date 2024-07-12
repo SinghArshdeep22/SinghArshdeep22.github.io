@@ -37,7 +37,7 @@
     line-height: 1.6;
 }
 
-@media (width: 360px) and (height: 740px) {
+@media (max-width: 450px) and (max-height: 932px) {
     #about {
         padding: 0 2em 1em 2em;
     }
